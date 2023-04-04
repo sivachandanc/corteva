@@ -44,11 +44,12 @@ To view the analysis results, you can run the Streamlit app by running the `stre
 ## Bonus - AWS Deployment
 For the Database I would used 
 1. `AWS RDS` to deploy a MySQL databse instance. 
-2. I would have used `AWS lambda` to ingest files along with `s3 event notification` to trigger the AWS Lambda
+2. I would have used `AWS lambda` to ingest files along with `s3 event notification` to trigger the AWS Lambda(Assuming the file will be dropping in s3)
+3. If the files are large I might go for `AWS Batch`. Because it doesnt have the limitations of AWS Lambda.
 
 
 ## Checkout the Streamlit app
 
-I have deployed this project on AWS EC2. Streamlit web app is running in this EC2 and you can acess the on 8501 port whihc I exposed.
+I have deployed this project on AWS EC2. Streamlit web app is running in this EC2 and you can access that on 8501 port which I exposed.
 
-To us the app go to : ``
+To use the app go to : `http://54.70.113.158:8501/`
